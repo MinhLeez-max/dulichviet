@@ -1,11 +1,13 @@
 services:
   - type: web
-    name: django-app
+    name: dulichviet
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn TourNhanh.wsgi"
+    buildCommand: ""
+    startCommand: gunicorn TourNhanh.wsgi
     envVars:
-      - key: DEBUG
-        value: "False"
+      - key: DJANGO_SETTINGS_MODULE
+        value: tourapp.settings
       - key: SECRET_KEY
-        generateValue: true
+        value: your-secret-key
+      - key: DEBUG
+        value: 'False'
