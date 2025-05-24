@@ -1,1 +1,1 @@
-web: gunicorn <tournhanh>.wsgi:application
+web: gunicorn Tournhanh.wsgi:application
