@@ -17,12 +17,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY', default='abcxyz123')
 DEBUG = config('DEBUG', default=False, cast=bool)
+<<<<<<< HEAD
 ALLOWED_HOSTS = [
     "dulichviet-1.onrender.com",
     "localhost",
     "127.0.0.1",
 ]
 
+=======
+ALLOWED_HOSTS = ['dulichviet-n7z7.onrender.com"', 'localhost', '127.0.0.1']
+>>>>>>> 68c9fc26f7f8b732b4be0c94f3bb6c0764fb469b
 
 # CSRF settings
 CSRF_TRUSTED_ORIGINS = ['https://*.replit.app', 'https://*.replit.dev']
