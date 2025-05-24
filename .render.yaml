@@ -3,7 +3,7 @@ services:
     name: django-app
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn tournhanh.wsgi"
+    startCommand: "gunicorn TourNhanh.wsgi"
     envVars:
       - key: DEBUG
         value: "False"
